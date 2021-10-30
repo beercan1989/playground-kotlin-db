@@ -6,6 +6,7 @@ Playing around with Kotlin and database stuff.
 * JetBrains / Exposed - https://github.com/JetBrains/Exposed
 * Gradle - https://gradle.org
 * Multi-Project Build - https://docs.gradle.org/current/userguide/multi_project_builds.html
+* Config4k (Typesafe Config) - https://github.com/config4k/config4k
 
 # Sources
 * https://docs.gradle.org/current/userguide/sharing_build_logic_between_subprojects.html#sharing_build_logic_between_subprojects

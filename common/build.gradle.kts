@@ -24,6 +24,11 @@ dependencies {
     // Database Driver
     implementation("com.h2database:h2:1.4.200")
 
+    // Configuration
+    implementation("com.typesafe:config:1.4.1")
+    implementation("io.github.config4k:config4k:0.4.2")
+    implementation(kotlin("reflect"))
+
     // Test framework
     testImplementation("io.kotest:kotest-runner-junit5:4.2.2")
     testImplementation("io.kotest:kotest-assertions-core:4.2.2")

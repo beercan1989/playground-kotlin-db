@@ -20,7 +20,7 @@ Principals:
 Primary Key: Customer ID
 * Customer ID (unique number)
 * Created At (datetime) {default value}
-* Modified At (datetime) {default value + upgrade trigger}
+* Modified At (datetime) {default value + on update}
 
 ### Expenditure & Returns
 Composite key of Customer ID, Type, Date
@@ -30,7 +30,7 @@ Composite key of Customer ID, Type, Date
 * Expense (float)
 * Return (float)
 * Created At (datetime) {default value}
-* Modified At (datetime) {default value + upgrade trigger}
+* Modified At (datetime) {default value + on update}
 
 ### Statement of Net Position:
 Primary Key: Customer ID
@@ -38,7 +38,11 @@ Primary Key: Customer ID
 * Registration Date (year-month-day)
 * Net Position (float)
 * Created At (datetime) {default value}
-* Modified At (datetime) {default value + upgrade trigger}
+* Modified At (datetime) {default value + on update}
 
 ## Sources
 * SQL created | modified fields - https://stackoverflow.com/questions/31634918/how-do-i-add-a-last-modified-and-created-column-in-a-sql-server-table
+* Composite primary keys - https://github.com/JetBrains/Exposed/issues/239
+
+## Notes
+* Code might be simplified once MySQL's `ON UPDATE` is directly supported - https://github.com/JetBrains/Exposed/pull/986
